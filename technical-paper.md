@@ -1,10 +1,10 @@
 # SOLID
 
-As the project codebase grows, it becomes more and more difficult to manage, but that is the problem, the SOLID principles are meant to solve. 
+As the project codebase grows, it becomes increasingly difficult to manage, but that is the problem the SOLID principles are meant to solve. 
 
-The term SOLID is an acronym for five design principles intended to make the software codebase more understandable, flexible and maintainable.
+The term SOLID is an acronym for five design principles intended to make the software codebase more understandable, flexible, and maintainable.
 
-Let us learn each principle with some examples so that we can understand how we can implement these priniciples in our codebase.
+Let us learn each principle with some examples so that we can understand how we can implement these principles in our codebase.
 
 
 ## 1. Single-Responsibility Principle
@@ -24,7 +24,7 @@ class Invoice {
 }
 ```
 
-This class calculates total, prints invoice, and saves to db as well, which are too many responsiblities for a single class.
+This class calculates the total, prints the invoice, and saves to the database, which is too many responsibilities for a single class.
 
 Good design
 
@@ -89,7 +89,7 @@ class Triangle implements Shape {
 }
 ```
 
-Now no existing code was changed, but the logic to calculate the area was included in its shape class only.
+Now, no existing code was changed, but the logic to calculate the area was included in the shape class only.
 
 ## 3. Liskov Substitution Principle
 
@@ -108,7 +108,7 @@ class Ostrich extends Bird {
 }
 ```
 
-Ostrich cannot fly and this violates Liskov Substitution principle.
+An ostrich cannot fly, and this violates the Liskov Substitution principle.
 
 Good design
 
@@ -146,7 +146,7 @@ class Robot implements Worker {
     public void eat() {}
 }
 ```
-But robots dont eat, but was forced to implement the eat class.
+But robots don't eat, but we were forced to implement the eat method.
 
 Good design
 
@@ -189,7 +189,7 @@ class Computer {
 }
 ```
 
-If type of keyboard changes we will have to change the computer class as well.
+If the type of keyboard changes, we will have to change the computer class as well.
 
 Good design
 
@@ -215,7 +215,7 @@ class Computer {
 }
 ```
 
-Now any keyboard can be used, the computer class, the code is more flexible and there is loose coupling.
+Now, any keyboard can be used; in the computer class, the code is more flexible, and there is loose coupling.
 
 ## References
 
