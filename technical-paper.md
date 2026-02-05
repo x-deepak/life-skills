@@ -94,6 +94,7 @@ Now no existing code was changed, but the logic to calculate the area was includ
 ## 3. Liskov Substitution Principle
 
 Definition:
+
     Objects of a subclass should replace parent class objects without breaking behavior.
 
 Bad example
@@ -131,6 +132,7 @@ Now substitution works correctly.
 ## 4. Interface Segregation Principle
 
 Definition:
+
 Clients should not be forced to implement methods they don’t use.
 
 Bad design
